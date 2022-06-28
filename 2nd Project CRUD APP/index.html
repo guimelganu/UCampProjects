@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Consultoria Rapport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Agenda de Pacientes</h1></header>
+        <form action="">
+            <label for="txtNombre">Nombre: </label><input id="txtNombre" type="text" placeholder="Nombre del Paciente"><br>
+            <label for="inphone">Telefono: </label><input id="inphone" type="tel" placeholder="Telefono del Paciente"><br>
+            <label for="intime">Horario de Consulta: </label><input type="time" id="intime" placeholder="Horario"><br>
+            <label for="indate">Dia de Consulta: </label><input type="date" id="indate" placeholder="Dia"><br>
+            <button type="button" onclick="guardarPaciente();">Guardar</button>
+        </form>
+        <br>
+        <br>
+        <table id="tablePacientes" class="tablaDatos">
+            <thead>
+            <tr>
+                <th>Nombre:</th>
+                <th>Telefono:</th>
+                <th>Horario:</th>
+                <th>Dia:</th>
+            </tr>
+            </thead>
+            <tbody id="tablaBody">
+            <tr>
+                <td>Julio Perez</td>
+                <td>557894562</td>
+                <td>01:45</td>
+                <td>Martes</td>
+            </tr>
+            </tbody>
+        </table>
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+</html>
