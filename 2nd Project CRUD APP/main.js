@@ -1,4 +1,5 @@
 const tablePacientes = document.getElementById('tablaBody'); //Apuntar a tabla html
+const datos = document.getElementById('datos');
 
 let pacientes = [
     {   
@@ -36,6 +37,7 @@ function mostrarPacientes(){
 }
 
 function guardarPaciente(){
+    
     alert("Paciente Guardado");
     mostrarPacientes();
 }
